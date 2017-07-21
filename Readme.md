@@ -1,5 +1,7 @@
 # Readme
-This is testing by Dexter
+
+## Description
+This is testing which is runing on Raspberry Pi3
 
 ## Google Assistant SDK
 from : https://developers.google.com/assistant/sdk/develop/python/run-sample
