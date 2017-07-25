@@ -17,10 +17,17 @@ Install steps(recommended using the python3)
 ```
 $ sudo apt-get update  
 $ sudo apt-get install python3-dev  
+$ sudo apt-get -m pip install --upgrade pip setuptools 
+$ sudo python -m pip install --upgrade google-assistant-library  
 $ sudo python3 -m pip install --upgrade google-assistant-library  
+$ sudo python -m pip install --upgrade google-auth-oauthlib[tool]  
 $ sudo python3 -m pip install --upgrade google-auth-oauthlib[tool]  
 ```
-4. Run google assistant:
+4. Authroize the google assistant sdk
+```
+google-oauthlib-tool --client-secrets /path/to/client_secret_client-id.json --scope https://www.googleapis.com/auth/assistant-sdk-prototype --save --headless
+```
+5. Run google assistant:
 ```
 $ python3 hotword.py --credentials ~/.config/google-oauthlib-tool/credentials.json 
 ```
